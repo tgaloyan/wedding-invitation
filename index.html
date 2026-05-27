@@ -1,1 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anahit & Aram Wedding Invitation</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Cormorant Garamond', serif;
+      background:#fdf8f5;
+      color:#5b4636;
+      overflow-x:hidden;
+    }
+
+    h1,h2,h3{
+      font-weight:400;
+    }
+
+    .hero{
+      height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
+      url('https://cdn.shopify.com/s/files/1/0953/9973/9676/files/w1.jpg?v=1779872298');
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      color:white;
+      padding:20px;
+    }
+
+    .hero-content{
+      backdrop-filter: blur(3px);
+      padding:40px;
+      border:1px solid rgba(255,255,255,0.3);
+      border-radius:20px;
+      background:rgba(255,255,255,0.08);
+    }
+
+    .subtitle{
+      letter-spacing:4px;
+      font-size:18px;
+      margin-bottom:20px;
+    }
+
+    .names{
+      font-family:'Great Vibes', cursive;
+      font-size:100px;
+      line-height:1.1;
+      margin-bottom:20px;
+    }
+
+    .date{
+      font-size:28px;
+      letter-spacing:2px;
+    }
+
+    .section{
+      padding:100px 10%;
+    }
+
+    .section-title{
+      text-align:center;
+      font-size:52px;
+      margin-bottom:60px;
+      font-family:'Great Vibes', cursive;
+      color:#b8865b;
+    }
+
+    .story{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:50px;
+      align-items:center;
+    }
+
+    .story img{
+      width:100%;
+      border-radius:20px;
+      box-shadow:0 10px 30px rgba(0,0,0,0.1);
+    }
+
+    .story-text{
+      font-size:24px;
+      line-height:1.8;
+    }
+
+    .gallery{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .gallery img{
+      width:100%;
+      height:400px;
+      object-fit:cover;
+      border-radius:20px;
+      transition:0.4s;
+    }
+
+    .gallery img:hover{
+      transform:scale(1.03);
+    }
+
+    .countdown{
+      display:flex;
+      justify-content:center;
+      gap:30px;
+      flex-wrap:wrap;
+      margin-top:40px;
+    }
+
+    .count-box{
+      width:140px;
+      height:140px;
+      background:white;
+      border-radius:20px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      box-shadow:0 10px 25px rgba(0,0,0,0.08);
+    }
+
+    .count-box h2{
+      font-size:42px;
+      color:#b8865b;
+    }
+
+    .count-box p{
+      letter-spacing:2px;
+      margin-top:10px;
+    }
+
+    .event-details{
+      text-align:center;
+      font-size:28px;
+      line-height:2;
+    }
+
+    .rsvp{
+      max-width:700px;
+      margin:auto;
+      background:white;
+      padding:50px;
+      border-radius:25px;
+      box-shadow:0 10px 40px rgba(0,0,0,0.08);
+    }
+
+    .rsvp input,
+    .rsvp textarea,
+    .rsvp select{
+      width:100%;
+      padding:18px;
+      margin-bottom:20px;
+      border:none;
+      background:#f7f2ee;
+      border-radius:12px;
+      font-size:18px;
+      font-family:'Cormorant Garamond', serif;
+    }
+
+    .rsvp button{
+      width:100%;
+      padding:18px;
+      border:none;
+      border-radius:12px;
+      background:#b8865b;
+      color:white;
+      font-size:20px;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    .rsvp button:hover{
+      background:#9f724b;
+    }
+
+    footer{
+      text-align:center;
+      padding:40px;
+      background:#f4ebe5;
+      font-size:20px;
+    }
+
+    @media(max-width:900px){
+
+      .names{
+        font-size:70px;
+      }
+
+      .story{
+        grid-template-columns:1fr;
+      }
+
+      .section{
+        padding:70px 7%;
+      }
+
+      .count-box{
+        width:120px;
+        height:120px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+
+  <section class="hero">
+    <div class="hero-content">
+      <p class="subtitle">TOGETHER WITH THEIR FAMILIES</p>
+
+      <h1 class="names">
+        Anahit <br>
+        & <br>
+        Aram
+      </h1>
+
+      <p class="date">ARE GETTING MARRIED • JUNE 10</p>
+    </div>
+  </section>
+
+  <!-- STORY -->
+
+  <section class="section">
+    <h2 class="section-title">Our Love Story</h2>
+
+    <div class="story">
+
+      <img src="https://cdn.shopify.com/s/files/1/0953/9973/9676/files/w2.jpg?v=1779872321" alt="Couple">
+
+      <div class="story-text">
+        <p>
+          Two hearts, one beautiful journey.
+          We invite you to celebrate our love,
+          laughter, and the beginning of forever.
+        </p>
+
+        <br>
+
+        <p>
+          Join us for an unforgettable evening
+          filled with romance, joy, and magical memories.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+
+  <section class="section" style="background:#f8f1ec;">
+    <h2 class="section-title">Moments of Love</h2>
+
+    <div class="gallery">
+
+      <img src="https://cdn.shopify.com/s/files/1/0953/9973/9676/files/w1.jpg?v=1779872298">
+
+      <img src="https://cdn.shopify.com/s/files/1/0953/9973/9676/files/w2.jpg?v=1779872321">
+
+      <img src="https://cdn.shopify.com/s/files/1/0953/9973/9676/files/w3.jpg?v=1779872321">
+
+    </div>
+  </section>
+
+  <!-- COUNTDOWN -->
+
+  <section class="section">
+    <h2 class="section-title">Countdown To Forever</h2>
+
+    <div class="countdown">
+
+      <div class="count-box">
+        <h2 id="days">0</h2>
+        <p>DAYS</p>
+      </div>
+
+      <div class="count-box">
+        <h2 id="hours">0</h2>
+        <p>HOURS</p>
+      </div>
+
+      <div class="count-box">
+        <h2 id="minutes">0</h2>
+        <p>MINUTES</p>
+      </div>
+
+      <div class="count-box">
+        <h2 id="seconds">0</h2>
+        <p>SECONDS</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EVENT DETAILS -->
+
+  <section class="section" style="background:#f8f1ec;">
+    <h2 class="section-title">Wedding Details</h2>
+
+    <div class="event-details">
+      <p>📅 June 10</p>
+      <p>🕊 Ceremony Begins at 5:00 PM</p>
+      <p>📍 Yerevan, Armenia</p>
+    </div>
+  </section>
+
+  <!-- RSVP -->
+
+  <section class="section">
+
+    <h2 class="section-title">RSVP</h2>
+
+    <div class="rsvp">
+
+      <input type="text" placeholder="Your Name">
+
+      <select>
+        <option>Will you attend?</option>
+        <option>Yes, I will attend</option>
+        <option>Sorry, I can't come</option>
+      </select>
+
+      <input type="number" placeholder="Number of Guests">
+
+      <textarea rows="5" placeholder="Leave your wishes..."></textarea>
+
+      <button onclick="showMessage()">
+        Send RSVP
+      </button>
+
+    </div>
+
+  </section>
+
+  <footer>
+    Made with love for Anahit & Aram ♡
+  </footer>
+
+  <script>
+
+    // COUNTDOWN
+
+    const weddingDate = new Date("June 10, 2026 17:00:00").getTime();
+
+    const timer = setInterval(function(){
+
+      const now = new Date().getTime();
+
+      const distance = weddingDate - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("days").innerHTML = days;
+      document.getElementById("hours").innerHTML = hours;
+      document.getElementById("minutes").innerHTML = minutes;
+      document.getElementById("seconds").innerHTML = seconds;
+
+      if(distance < 0){
+        clearInterval(timer);
+
+        document.querySelector(".countdown").innerHTML =
+        "<h2>The Wedding Day Has Arrived 💍</h2>";
+      }
+
+    },1000);
+
+    // RSVP FAKE MESSAGE
+
+    function showMessage(){
+      alert("Thank you for your RSVP! ♡");
+    }
+
+  </script>
+
+</body>
+</html>
